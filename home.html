@@ -1,10 +1,23 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="popup.js"></script>
+    </head>
   <body>
-    <script src="popup.js"></script>
-    <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
-        <img src="icon.png" alt="icon"  width="40" height="40">
-        <p style="font-weight: bold; font-size: medium;white-space: nowrap;padding:10px;">Block Subreddits</p>
-    </div>
     
+    <div class="center-div">
+        <img src="icon.png" alt="icon"  width="40" height="40">
+        <p class="main-text">Block Subreddits</p>
+    </div>
+    <div class="blocked-div">
+        <div class="center-div">
+            <p class="main-text">Ban List</p>
+            <button id="addSub" class="button1" type="button">Add SubReddit</button>
+        </div>
+        <div id="subNameDiv" class="no-display center-div ">
+            <input type="text" id="subName" autocomplete="off" />
+            <button><img src="tick.svg"></button>
+        </div>
+    </div>
   </body>
 </html>
