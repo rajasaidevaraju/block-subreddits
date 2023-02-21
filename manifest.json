@@ -9,10 +9,12 @@
   },
   "content_scripts": [
     {
-      "js": ["scripts/content.js"],
+      "js": ["Scripts/content.js"],
       "matches": [
-        "https://www.reddit.com/*"
-      ]
+        "https://www.reddit.com/",
+        "https://www.reddit.com/r/popular/*"
+      ],
+      "run_at": "document_end"
     }
   ]
 }
