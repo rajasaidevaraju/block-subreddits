@@ -3,6 +3,7 @@
         <link rel="stylesheet" href="style.css">
         <script src="popup.js"></script>
     </head>
+
   <body>
     
     <div class="center-div">
@@ -12,12 +13,18 @@
     <div class="blocked-div">
         <div class="center-div">
             <p class="main-text">Ban List</p>
-            <button id="addSub" class="button1" type="button">Add SubReddit</button>
+            <button id="addNewSub" class="button1" type="button">Add SubReddit</button>
         </div>
         <div id="subNameDiv" class="no-display center-div ">
             <input type="text" id="subName" autocomplete="off" />
-            <button><img src="tick.svg"></button>
+            <button id="addTick"><img src="tick.svg"></button>
+            <button id="hideDiv"><img src="x.svg"></button>
+        </div>
+        <div id="subs">
+        
         </div>
     </div>
+   
   </body>
+  
 </html>

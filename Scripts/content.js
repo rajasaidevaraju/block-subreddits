@@ -1,6 +1,8 @@
 
 let previousLength=0;
 
+let subs=[];
+
 // Will execute removeSub every 1 seconds 
 var intervalID = window.setInterval(removeSub, 1000);
 

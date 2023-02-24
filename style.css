@@ -15,9 +15,8 @@
     align-items: center
 }
 
-input{
-padding: 3px;
-margin:5px
+.sub-name{
+  
 }
 
 .no-display{
@@ -73,6 +72,8 @@ button:after {
   
   button:active {
     top: 1px;
+    background-color: darkgray;
+    transition: all 1s;
   }
   
 button:hover {
@@ -82,5 +83,10 @@ button:hover {
   }
 
 body{
-  width:400px
+  width:350px
 }
+
+input{
+  padding: 3px;
+  margin:5px
+  }
