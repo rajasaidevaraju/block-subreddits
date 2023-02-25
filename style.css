@@ -2,21 +2,43 @@
     font-weight: bold;
     font-size: medium;
     white-space: nowrap;
-    padding:10px;
+    padding: 5px;
+    margin: 10px;
 }
 
-.blocked-div{
-    border:2px solid black;
-    background-color: lightgrey;
-    border-radius: 5px;
-    display:flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center
+.button-text{
+    font-weight: bold;
+    font-size: medium;
+    white-space: nowrap;
+    padding: 5px;
+    margin: 5px;
 }
+
 
 .sub-name{
-  
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+  padding: 5px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subs p:hover{
+  cursor: pointer;
+}
+
+.subs{
+  max-height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .no-display{
@@ -24,16 +46,57 @@
 }
 
 .button1{
-  height: 36px;
-  width: 122px;
-  
+  display: flex;
+  align-items: center;
 }
+
+.del-btn:active{
+  background-color: rgb(255, 255, 255);
+  color: black;  
+}
+
+.del-btn>img, .del-btn:active>img{
+  content: url("./SVG/delete.svg");
+}
+
+.del-btn-red{
+  background-color: red;
+  color: white;
+}
+
+.del-btn-red>img{
+  content: url("./SVG/delete-white.svg");
+}
+
 
 .center-div{
   display:flex; 
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.list-div{
+  border:2px solid black;
+  background-color: lightgrey;
+  border-radius: 5px;
+  display:flex; 
+  flex-direction: column;
+  justify-content: center;
   align-items: center
+}
+.button-div{
+  border:2px solid black;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin-bottom:10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  display:flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 button{
@@ -43,6 +106,7 @@ button{
     padding: 5px;
     position: relative;  
     border: none;
+    background-color: rgb(255, 255, 255);
     transition: all 0.2s ease-in-out;
 }
 
@@ -83,10 +147,15 @@ button:hover {
   }
 
 body{
-  width:350px
+  width:350px;
+  display: flex;
+  flex-direction: column;
 }
 
 input{
+  border-radius: 5px;
   padding: 3px;
-  margin:5px
+  border: 5px;
+  height:30px;
+  margin:5px; 
   }

@@ -10,17 +10,20 @@
         <img src="icon.png" alt="icon"  width="40" height="40">
         <p class="main-text">Block Subreddits</p>
     </div>
-    <div class="blocked-div">
-        <div class="center-div">
-            <p class="main-text">Ban List</p>
-            <button id="addNewSub" class="button1" type="button">Add SubReddit</button>
-        </div>
+    <div class="button-div">
+        <button id="addNewSub" type="button" class="button1"><p class="button-text">Add</p><img src="./SVG/plus.svg"></button>
+        <button id="deleteSub" type="button" class="button1 del-btn"><p class="button-text">Delete</p><img id="delImg" src="./SVG/delete.svg"></button>
+        <button id="pause" type="button" class="button1"><p class="button-text">Pause</p><img src="./SVG/pause.svg"></button>
+        <button id="resume" type="button" class="button1 no-display"><p class="button-text">Resume</p><img src="./SVG/resume.svg"></button>
+    </div>
+    <div class="list-div">
+        <p class="main-text">Ban List</p>
         <div id="subNameDiv" class="no-display center-div ">
             <input type="text" id="subName" autocomplete="off" />
-            <button id="addTick"><img src="tick.svg"></button>
-            <button id="hideDiv"><img src="x.svg"></button>
+            <button id="addTick"><img src="./SVG/tick.svg"></button>
+            <button id="hideDiv"><img src="./SVG/hide.svg"></button>
         </div>
-        <div id="subs">
+        <div id="subs" class="subs">
         
         </div>
     </div>
