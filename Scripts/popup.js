@@ -77,6 +77,8 @@ function addTick(){
     
 }
 
+
+// deleting a subreddit name
 function handleSubClick(node){
 
     if(del){
@@ -120,6 +122,7 @@ function populate(){
         targetDiv.appendChild(createBlock(subNames[i]))
     }
 }
+
 
 window.onload=function(){
 

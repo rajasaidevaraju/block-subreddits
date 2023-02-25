@@ -8,8 +8,21 @@
     "default_icon": "icon.png"
   },
   "permissions": [
-    "storage"
+    "background",
+    "tabs",
+    "activeTab",
+    "storage",
+    "nativeMessaging"
   ],
+  "background":{
+    "service_worker": "Scripts/background.js"
+  },
+  "externally_connectable":{
+    "matches":[
+      "https://www.reddit.com/",
+      "https://www.reddit.com/r/popular/*"
+    ]
+  },
   "content_scripts": [
     {
       "js": ["Scripts/content.js"],
