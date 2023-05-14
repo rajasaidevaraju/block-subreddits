@@ -2,6 +2,15 @@
 let previousLength=0;
 let GsubNames=[]
 
+window.setInterval(()=>{
+    let qr=document.getElementById("nsfw-qr-dialog");
+    if(qr!=null){
+        
+        chrome.runtime.sendMessage({require: "redirect"});
+    }
+}, 1000);
+    
+    
 chrome.runtime.sendMessage({require: "pause"},(pause)=>{
     // if result is true, do not pause 
     if(pause){

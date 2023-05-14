@@ -28,7 +28,14 @@
       "js": ["Scripts/content.js"],
       "matches": [
         "https://www.reddit.com/",
+        "https://www.reddit.com/r/*",
         "https://www.reddit.com/r/popular/*"
+      ],
+      "run_at": "document_end"
+    },{
+      "js": ["Scripts/oldcontent.js"],
+      "matches": [
+        "https://old.reddit.com/r/*"
       ],
       "run_at": "document_end"
     }

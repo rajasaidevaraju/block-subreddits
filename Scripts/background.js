@@ -12,6 +12,11 @@ chrome.runtime.onMessage.addListener(
                 sendResponse(subNames);
             });
         }
+        else if(request["require"]==="redirect"){
+            let url=sender.tab.url;
+            url=url.replace("www","old")
+            chrome.tabs.update(sender.tab.id,{url: url});
+        }
         return true;
     }
   );
