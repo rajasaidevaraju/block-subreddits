@@ -3,8 +3,13 @@ let previousLength=0;
 let GsubNames=[]
 let done=false;
 window.setInterval(()=>{
-    let qr=document.getElementById("nsfw-qr-dialog");
+    
+    let qr=document.querySelector("body > shreddit-app > shreddit-experience-tree").shadowRoot.querySelector("#nsfw-qr-dialog");
+   if(qr==null){
+    qr=document.querySelector("#nsfw-qr-dialog")
+   }
     if(qr!=null && done==false){
+       
         chrome.runtime.sendMessage({require: "redirect"});
         done=true;
     }
