@@ -1,6 +1,18 @@
 // content script for old.reddit
 window.addEventListener('load', 
   ()=>{
-    document.getElementsByClassName("dismiss-pinnable c-close c-hide-text")[0].click()
-    console.log("HERE");
+    let element = document.getElementsByClassName("dismiss-pinnable c-close c-hide-text")[0];
+    if(element){
+      element.click();
+    }
+    element = document.getElementsByClassName("listingsignupbar__close")[0];
+    if(element){
+      element.click();
+    }
+    
+    //Removing Sidebar
+    const sideBar = document.getElementsByClassName("side")[0];
+    sideBar.parentElement.removeChild(sideBar)
+
+
 }, false);
