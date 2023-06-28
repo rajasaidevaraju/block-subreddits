@@ -2,8 +2,44 @@
 let previousLength=0;
 let GsubNames=[]
 let done=false;
+
+function insertSelect(){
+    let element=document.querySelectorAll('[bundlename="comment_body_header"]');
+    if(element.length>0){
+        element=element[0];
+        let sort= document.createElement("select");
+        sort.setAttribute("id","a-comment-sort")
+        addOption(sort,"sort",true)
+        addOption(sort,"controversial");
+        addOption(sort,"new");
+        addOption(sort,"best");
+        addOption(sort,"top");
+        addOption(sort,"old");
+
+        sort.onchange= function(event){
+            let url=location.protocol + '//' + location.host + location.pathname+"?sort="+event.target.value;
+            window.open(url);
+
+        }
+        element.parentNode.replaceChild(sort,element);
+    }
+}
+
+function addOption(parent,text,selected=false){
+    let option=document.createElement("option");
+    option.value=text
+    option.textContent=text
+    if(selected){
+        option.selected=true;
+        option.disabled=true;
+        option.hidden=true;
+    }
+    parent.appendChild(option);
+} 
+
+
 window.setInterval(()=>{
-    
+    insertSelect()
     let qr=document.querySelector("body > shreddit-app > shreddit-experience-tree").shadowRoot.querySelector("#nsfw-qr-dialog");
    if(qr==null){
     qr=document.querySelector("#nsfw-qr-dialog")
