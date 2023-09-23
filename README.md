@@ -2,8 +2,14 @@ A chrome extension that is used to block unwanted subredits from the popular fee
 This extension also redirects to old reddit UI when age restriction in new UI shows up.
 
 **Home Screen**
-![image](https://github.com/rajasaidevaraju/block-subreddits/assets/25662995/d13df365-875e-464e-bbff-a2469645ae85)
+
+<img src="https://github.com/rajasaidevaraju/block-subreddits/assets/25662995/d13df365-875e-464e-bbff-a2469645ae85" width=40% height=40%>
+
+
+
 
 **Add Screen**
-![image](https://github.com/rajasaidevaraju/block-subreddits/assets/25662995/8d5061a0-7063-4682-a860-717c43c8ee8c)
+
+<img src="https://github.com/rajasaidevaraju/block-subreddits/assets/25662995/8d5061a0-7063-4682-a860-717c43c8ee8c" width=40% height=40%>
+
 
